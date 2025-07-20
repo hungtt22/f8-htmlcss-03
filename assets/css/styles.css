@@ -47,7 +47,6 @@ a {
 .section-desc {
     margin-top: 18px;
     color: #575f66;
-    text-align: center;
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.67;
@@ -279,4 +278,51 @@ a {
 }
 .service__btn {
     margin-top: 55px;
+}
+
+/* ========== Work ========== */
+.work {
+    padding: 100px 0;
+    background: #f6fbff;
+}
+.work__desc {
+    width: 468px;
+}
+.work__list {
+    margin-top: 70px;
+    display: flex;
+    gap: 62px;
+}
+/* Work-Item */
+.work-item {
+    cursor: pointer;
+    padding: 43px 42px;
+    background: #fff;
+    outline: 16px solid #eaf6ff;
+    border-radius: 4px;
+    transition: 0.25s;
+}
+.work-item:hover:hover {
+    transform: translateY(-16px);
+    outline-color: #2e80ce;
+}
+.work-item__title {
+    color: #10375c;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38;
+}
+.work-item__desc {
+    margin-top: 28px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+.work-item__learn-more {
+    display: inline-block;
+    margin-top: 18px;
+    color: #2e80ce;
+    font-size: 1.6rem;
+    line-height: 1.75;
 }
