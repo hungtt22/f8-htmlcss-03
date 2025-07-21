@@ -29,7 +29,7 @@ a {
     min-width: 205px;
     padding: 21px 16px;
     border-radius: 999px;
-    background: #2e80ce;
+    background: var(--second-bg);
     color: #fff;
     text-align: center;
     font-size: 1.8rem;
@@ -258,7 +258,7 @@ a {
     --color-teeth: #10375c;
 }
 .service-item:hover .service-item__icon {
-    color: #2e80ce;
+    color: var(--second-bg);
     --color-teeth: #fff;
 }
 .service-item__text {
@@ -304,7 +304,7 @@ a {
 }
 .work-item:hover:hover {
     transform: translateY(-16px);
-    outline-color: #2e80ce;
+    outline-color: var(--second-bg);
 }
 .work-item__title {
     color: #10375c;
@@ -322,15 +322,14 @@ a {
 .work-item__learn-more {
     display: inline-block;
     margin-top: 18px;
-    color: #2e80ce;
+    color: var(--second-bg);
     font-size: 1.6rem;
     line-height: 1.75;
 }
 
 /* ========== Feature ========== */
 .feature {
-    padding: 70px 0;
-    margin: 100px 0;
+    padding: 85px 0;
 }
 .feature__row {
     display: flex;
@@ -359,4 +358,72 @@ a {
 }
 .feature__desc {
     margin-bottom: 38px;
+}
+/* ========== Member ========== */
+.member {
+    padding-top: 85px;
+}
+.member__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 38px;
+}
+.member__list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+}
+.member-item__bg-avatar {
+    padding-top: 28px;
+    background: #eaf6ff;
+    border-radius: 6px;
+}
+.member-item__avatar {
+    display: block;
+    max-width: 100%;
+    height: 290px;
+    object-fit: cover;
+    transition: 0.25s;
+}
+.member-item__avatar:hover {
+    transform: scale(1.1);
+}
+.member-item__title {
+    margin-top: 12px;
+    color: #10375c;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+.member-item__desc {
+    color: #575f66;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.86;
+}
+.member-control {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+.member-control__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: #575f66;
+    background: #fff;
+    border: 1px solid currentColor;
+    cursor: pointer;
+}
+.member-control__icon:hover {
+    color: #fff;
+    background: var(--second-bg);
+    border-color: currentColor;
 }
