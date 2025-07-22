@@ -427,3 +427,35 @@ a {
     background: var(--second-bg);
     border-color: currentColor;
 }
+
+/* ========== Install ========== */
+.install {
+    margin-top: 180px;
+}
+.install__inner {
+    padding: 0 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    background: #2e80ce;
+}
+.install__img {
+    display: block;
+    margin-top: -95px;
+}
+.install__content {
+    max-width: 586px;
+}
+.install__heading,
+.install__desc {
+    color: #fff;
+}
+.install__heading {
+    max-width: 489px;
+}
+.install__row {
+    margin-top: 38px;
+    display: flex;
+    column-gap: 28px;
+}
