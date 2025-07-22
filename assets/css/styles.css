@@ -118,17 +118,29 @@ a {
     font-size: 1.2em;
     font-weight: 300;
 }
+/* ========== Header Fixed ========== */
+.header-nav.fixed {
+    position: sticky;
+    top: -16px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.header-nav {
+    padding: 30px 0 16px;
+    background: var(--primary-bg);
+}
+.header-nav__inner {
+    display: flex;
+    align-items: center;
+}
+
 /* ========== Header ========== */
 
 .header {
     background: var(--primary-bg);
     min-height: 100vh;
-    padding: 30px 0 110px;
-}
-/* Header-Top */
-.header-top {
-    display: flex;
-    align-items: center;
+    padding: 60px 0 110px;
 }
 /* Navbar */
 .navbar {
